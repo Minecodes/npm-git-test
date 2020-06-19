@@ -7,5 +7,4 @@ Install: ```npm i git+https://github.com/Minecodes/npm-git-test```
 ```
 const npmGitTest = require('npm-git-test')
 npmGitTest.run('Welcome back ;)', 'root', 'toor', false)
-  .then(console.log('logged in'))
 ```
