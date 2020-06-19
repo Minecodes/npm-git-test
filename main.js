@@ -28,11 +28,9 @@ const prompt = new AutoComplete({
     'Wintergreen'
   ]
 });
- 
-prompt.run()
-  .then(answer => var run = answer)
-  .catch(console.error);
 
 exports.run = function() {
-  console.log(run)
+  prompt.run()
+   .then(answer => console.log('Answer:', answer))
+   .catch(console.error);
 }
