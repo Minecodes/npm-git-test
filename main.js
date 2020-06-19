@@ -15,5 +15,5 @@ const question = [
 let answers = prompt(question);
  
 exports.run = function() {
-  console.log(response)
+  console.log(answers)
 }
