@@ -1,16 +1,16 @@
 const { BasicAuth } = require('enquirer');
- 
+
+exports.run = function(msg, name, ps, show) {
  const prompt = new BasicAuth({
   name: 'password',
-  message: 'Please enter your password',
-  username: 'rajat-sr',
-  password: '123',
-  showPassword: true
+  message: msg,
+  username: name,
+  password: ps,
+  showPassword: show
 });
-
-exports.run = function() {
-  prompt
-   .run()
-   .then(answer => console.log('Answer:', answer))
-   .catch(console.error);
+ 
+ prompt
+  .run()
+  .then(answer => console.log('Please wait...'))
+  .catch(console.error);
 }
