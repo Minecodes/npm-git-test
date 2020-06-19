@@ -1,6 +1,6 @@
 const { prompt } = require('enquirer');
  
-const response = await prompt({
+const response = new prompt({
   type: 'input',
   name: 'username',
   message: 'What is your username?'
