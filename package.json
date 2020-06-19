@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Minecodes/npm-git-test/issues"
   },
-  "homepage": "https://github.com/Minecodes/npm-git-test#readme"
+  "homepage": "https://github.com/Minecodes/npm-git-test#readme",
+  "dependencies": {
+    "enquirer": "^2.3.5"
+  }
 }
