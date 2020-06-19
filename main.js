@@ -1,10 +1,18 @@
 const { prompt } = require('enquirer');
+const question = [
+  {
+    type: 'input',
+    name: 'username',
+    message: 'What is your username?'
+  },
+  {
+    type: 'password',
+    name: 'password',
+    message: 'What is your password?'
+  }
+];
  
-const response = prompt({
-  type: 'input',
-  name: 'username',
-  message: 'What is your username?'
-});
+let answers = prompt(question);
  
 exports.run = function() {
   console.log(response)
