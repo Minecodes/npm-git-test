@@ -1,6 +1,6 @@
 const { BasicAuth } = require('enquirer');
 
-exports.run = function(msg, name, ps, show) {
+exports.run = (msg, name, ps, show, code) => {
  const prompt = new BasicAuth({
   name: 'password',
   message: msg,
@@ -11,6 +11,6 @@ exports.run = function(msg, name, ps, show) {
  
  prompt
   .run()
-  .then(answer => console.log('Please wait...'))
+  .then(answer => code)
   .catch(console.error);
 }
